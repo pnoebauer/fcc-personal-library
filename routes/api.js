@@ -87,6 +87,7 @@ module.exports = function (app) {
 		.route('/api/books/:id')
 		.get(async function (req, res) {
 			let bookid = req.params.id;
+			// console.log('id', bookid);
 			//json res format: {"_id": bookid, "title": book_title, "comments": [comment,comment,...]}
 
 			try {
